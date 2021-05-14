@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+<!--    <script type="module" src="/webjars/rapidoc/dist/rapidoc-min.js"></script>-->
+    <script type="module" src="https://unpkg.com/rapidoc/dist/rapidoc-min.js"></script>
+    <title>Loans Doc</title>
+</head>
+<body>
+<rapi-doc
+        spec-url="/api-docs"
+        theme="dark"
+        render-style="read"
+        heading-text="Loans"
+        nav-item-spacing="compact"
+        info-description-headings-in-navbar="true"
+>
+    <p style="margin:0; padding:16px 36px; background-color:tomato; color:#fff; text-align:center;">
+        <b> default</b> slot | <span style="font-size:12px"> A good place to provide internal and external links, Sign In buttons etc</span>
+    </p>
+    <span slot="overview">
+        <p style="margin-top:10px; padding:16px 36px; background-color:MediumSeaGreen; color:#fff; text-align:center;">
+          <b> overview</b> slot | <span style="font-size:12px"> good for business flow explenation</span>
+        </p>
+        <div style="display:flex; flex-direction:column; align-items: center; font-size:13px; color: #777;">
+          <div> Provide explenations, diagrams and other HTML controls. You may also style them to your needs</div>
+        </div>
+      </span>
+    <p slot="servers"
+       style="margin-top:10px; padding:16px 36px; background-color:SlateBlue; color:#fff; text-align:center;">
+        <b> servers</b> slot| <span style="font-size:12px"> good for describing about the API gateways, load balancers application servers etc</span>
+    </p>
+    <span slot="auth">
+        <p style="margin-top:10px; padding:16px 36px; background-color:DodgerBlue; color:#fff; text-align:center;">
+          <b> auth</b> slot | <span style="font-size:12px"> good for describing authentication system</span>
+        </p>
+    </span>
+    <p slot="tag--treasury" style="margin-top:10px; padding:16px 36px; background-color:#ac7339; color:#fff; text-align:center;">
+        <b> tag--treasury</b> slot
+    </p>
+    <p slot="footer" style="margin:0; padding:16px 36px; background-color:orange; color:#fff; text-align:center;">
+        <b> footer</b> slot | <span style="font-size:12px"> may provide copyright info and other links</span>
+    </p>
+    <!--    <img id="logo" slot="logo" height="36px" src="/webjars/rapidoc/docs/specs/1e0e8cc-white-logo.png" alt="logo">-->
+</rapi-doc>
+</body>
+</html>

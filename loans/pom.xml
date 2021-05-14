@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.kilico.loans</groupId>
+    <artifactId>loans</artifactId>
+    <version>0.0.1</version>
+    <description>https://jump.nect.com/faq/main videoident solo, as by Techniker KK</description>
+    <modules>
+        <module>webapp</module>
+        <module>treasury</module>
+        <module>contract</module>
+    </modules>
+
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.3.2.RELEASE</version>
+        <relativePath/>
+    </parent>
+    <name>loans</name>
+    <packaging>pom</packaging>
+
+    <properties>
+        <java.version>1.8</java.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+    </properties>
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.kilico.loans</groupId>
+                <artifactId>treasury</artifactId>
+                <version>0.0.1</version>
+            </dependency>
+            <dependency>
+                <groupId>com.kilico.loans</groupId>
+                <artifactId>contract</artifactId>
+                <version>0.0.1</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.swagger.core.v3</groupId>
+                <artifactId>swagger-annotations</artifactId>
+                <version>2.1.7</version>
+            </dependency>
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>1.18.12</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+</project>
